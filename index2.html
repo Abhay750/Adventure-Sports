@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Adventure Sports — Guide & Gallery</title>
+    <meta name="description" content="Comprehensive guide to popular adventure sports with features, photos, videos and safety tips. HTML+CSS only." />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="wrap" role="main">
+        <header>
+            <a class="brand" href="#" aria-label="Adventure Sports Home">
+                <span class="logo">AS</span>
+                <div>
+                    <div style="font-weight:700">Adventure Sports</div>
+                    <div style="font-size:12px;color:var(--muted)">Guide • Safety • Photos • Videos</div>
+                </div>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="#activities">Activities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#safety">Safety</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero" aria-label="Hero">
+            <div>
+                <h1 style="color: black;">Adventure Sports: Complete Guide</h1>
+                <p style="color: black;">Explore top adventure sports with features, difficulty, required gear, ideal locations, photos and sample videos. </p>
+                <div class="cta-row">
+                    <a class="btn" href="#activities">Explore Activities</a>
+                    <a class="secondary" href="#safety" style="color: rgb(36, 35, 35);">Safety Tips</a>
+                </div>
+            </div>
+
+            <aside class="hero-aside" aria-label="Quick facts">
+                <div class="stat"><div><small class="muted">Popular Regions</small><strong>Alps • Rockies • Himalaya • Coast</strong></div></div>
+                <div class="stat"><div><small class="muted">Top Activities</small><strong>Climbing • Rafting • Paragliding</strong></div></div>
+                <div class="stat"><div><small class="muted">Skill Levels</small><strong>Beginner → Expert</strong></div></div>
+                <div style="height:12px"></div>
+                <div style="color:var(--muted);font-size:13px">Estimated durations, difficulty & gear suggestions are indicative. Always train with certified instructors.</div>
+            </aside>
+        </section>
+
+        <section id="activities">
+            <div class="section-head">
+                <h2>Activities & Features</h2>
+                <p class="lead">Overview of each adventure sport: quick facts, ideal seasons, typical duration, difficulty and essential gear.</p>
+            </div>
+
+            <div class="grid activities">
+                <!-- Card: Rock Climbing -->
+                <article class="card" aria-labelledby="climb">
+                    <img src="istockphoto-459964807-612x612.jpg" alt="Rock climbing on cliff">
+                    <div class="card-body">
+                        <h3 id="climb">Rock Climbing</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Scale natural cliffs or indoor walls. Styles: bouldering, sport, trad, multi-pitch.</p>
+                        <div class="meta">
+                            <span class="tag">Difficulty: Medium → Hard</span>
+                            <span class="tag">Duration: 2–6 hrs</span>
+                            <span class="tag">Best Season: Spring/Fall</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Helmet</span>
+                                <span class="tag">Harness</span>
+                                <span class="tag">Ropes</span>
+                                <span class="tag">Climbing shoes</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Whitewater Rafting -->
+                <article class="card" aria-labelledby="rafting">
+                    <img src="raft.jpg" alt="Whitewater rafting">
+                    <div class="card-body">
+                        <h3 id="rafting">Whitewater Rafting</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Team paddling through river rapids. River grading I–VI indicates difficulty.</p>
+                        <div class="meta">
+                            <span class="tag">Class: I–V</span>
+                            <span class="tag">Duration: 1–8 hrs</span>
+                            <span class="tag">Best Season: Spring Melt</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Life jacket</span>
+                                <span class="tag">Helmet</span>
+                                <span class="tag">Dry bag</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Paragliding -->
+                <article class="card" aria-labelledby="paraglide">
+                    <img src="para.jpg" alt="Paragliding over hills">
+                    <div class="card-body">
+                        <h3 id="paraglide">Paragliding</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Foot-launched canopy flight. Experience depends on thermals and launching site.</p>
+                        <div class="meta">
+                            <span class="tag">Difficulty: Beginner → Expert</span>
+                            <span class="tag">Duration: 10–45 min</span>
+                            <span class="tag">Best Season: Clear, stable skies</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Paraglider</span>
+                                <span class="tag">Reserve chute</span>
+                                <span class="tag">Helmet</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Mountain Biking -->
+                <article class="card" aria-labelledby="mtb">
+                    <img src="bike.avif" alt="Mountain biking on trail">
+                    <div class="card-body">
+                        <h3 id="mtb">Mountain Biking</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Trail riding, enduro and downhill — choose bike and protection accordingly.</p>
+                        <div class="meta">
+                            <span class="tag">Difficulty: Easy → Expert</span>
+                            <span class="tag">Duration: 1–6 hrs</span>
+                            <span class="tag">Best Season: Dry trails</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Mountain bike</span>
+                                <span class="tag">Pads</span>
+                                <span class="tag">Hydration</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Scuba Diving -->
+                <article class="card" aria-labelledby="scuba">
+                    <img src="diving.avif" alt="Scuba diver underwater">
+                    <div class="card-body">
+                        <h3 id="scuba">Scuba Diving</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Underwater exploration. Certification recommended for deep or remote dives.</p>
+                        <div class="meta">
+                            <span class="tag">Depth: Shore → 40m+</span>
+                            <span class="tag">Duration: 30–60 min per dive</span>
+                            <span class="tag">Best Season: Clear sea conditions</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Regulator</span>
+                                <span class="tag">BCD</span>
+                                <span class="tag">Wetsuit</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card: Zip-lining -->
+                <article class="card" aria-labelledby="zip">
+                    <img src="zip.jpg" alt="Zip line through forest">
+                    <div class="card-body">
+                        <h3 id="zip">Zip-lining</h3>
+                        <p style="color:var(--muted);margin:0 0 8px 0">Fast canopy rides on cables between platforms — great for sightseeing with an adrenaline kick.</p>
+                        <div class="meta">
+                            <span class="tag">Difficulty: Low → Medium</span>
+                            <span class="tag">Duration: Few minutes per line</span>
+                            <span class="tag">Best Season: Dry weather</span>
+                        </div>
+                        <div style="margin-top:auto">
+                            <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+                                <span class="tag">Gear: Harness</span>
+                                <span class="tag">Gloves</span>
+                                <span class="tag">Helmet</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-head">
+                <h2>Photo & Video Gallery</h2>
+                <p class="lead">High-quality photos and sample videos demonstrating activities and environments.</p>
+            </div>
+
+            <div class="gallery" aria-live="polite">
+                <img src="bikes.webp" alt="bike of mountains">
+                <img src="diving1.webp" alt="Whitewater rafting team">
+                <!-- Public domain sample video: Big Buck Bunny -->
+                <video controls preload="metadata" poster="https://images.unsplash.com/photo-1496346651079-6ca5cb67f42f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c4f6f3b68f6f1e3b9c3d1c7b2a4f0c8" aria-label="Sample adventure video">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <img src="para.jpg" alt="Paraglider in sky">
+                <!-- Another public sample video -->
+                <video controls preload="metadata" poster="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3a1c9b4b6dadb3b2a1a9c9f3c0a1d2e1" aria-label="Outdoor sample">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4f8b6c2f2e3f1c2e3d4f5b6a7c8d9a0b" alt="Scuba diving scene">
+            </div>
+        </section>
+
+        <section id="safety">
+            <div class="section-head">
+                <h2>Safety & Preparation</h2>
+                <p class="lead">Key guidance on training, gear checks and emergency procedures before attempting any adventure sport.</p>
+            </div>
+
+            <div class="features">
+                <div>
+                    <div class="feature-item">
+                        <h3>Training & Certification</h3>
+                        <p>Take certified courses for specialized activities (e.g., scuba open water, whitewater safety, paragliding tandem and pilot courses). Practice fundamental skills with instructors.</p>
+                    </div>
+
+                    <div class="feature-item" style="margin-top:12px">
+                        <h3>Gear & Maintenance</h3>
+                        <p>Inspect harnesses, helmets and ropes. Replace damaged equipment and follow manufacturer service intervals for regulators and parachutes.</p>
+                    </div>
+
+                    <div class="feature-item" style="margin-top:12px">
+                        <h3>Environmental Awareness</h3>
+                        <p>Check weather forecasts, river flows, avalanche warnings and local advisories. Respect protected areas and local wildlife.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="feature-item">
+                        <h3>Partner & Communication</h3>
+                        <p>Never go alone into remote or technical areas. Carry a communication plan and emergency contacts. Use PLBs, satphones or VHF where applicable.</p>
+                    </div>
+
+                    <div class="feature-item" style="margin-top:12px">
+                        <h3>First Aid & Emergency</h3>
+                        <p>Carry a compact first aid kit and learn wilderness first aid basics. Know evacuation procedures for local regions.</p>
+                    </div>
+
+                    <div class="feature-item" style="margin-top:12px">
+                        <h3>Risk Management</h3>
+                        <p>Assess risk vs. reward realistically. Upgrade skills gradually. Avoid pushing limits in unfamiliar conditions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:16px">
+                <h3 style="margin:0 0 8px 0">Frequently Asked Questions</h3>
+                <details>
+                    <summary>Do I need insurance for adventure sports?</summary>
+                    <p>Yes. Look for travel or activity-specific insurance that covers rescue, medical evacuation and activity-related injuries.</p>
+                </details>
+                <details>
+                    <summary>How do I choose an instructor or outfitter?</summary>
+                    <p>Verify certifications (e.g., UIAA, PADI, IFMGA, ACA), read reviews, ask about safety briefings and equipment maintenance policies.</p>
+                </details>
+                <details>
+                    <summary>What fitness is required?</summary>
+                    <p>Fitness requirements vary. Endurance, core strength and flexibility are common across many sports; specialized training recommended for technical disciplines.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-head">
+                <h2>Plan Your Adventure</h2>
+                <!-- <p class="lead">Use the form to note your interest — this is a demo form (HTML only, no submission backend).</p> -->
+            </div>
+
+            <div class="contact">
+                <form class="form" onsubmit="return false" aria-label="Interest form">
+                    <label for="name">Full name</label>
+                    <input id="name" type="text" placeholder="Your name" />
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="you@example.com" />
+
+                    <label for="activity">Activity of interest</label>
+                    <select id="activity">
+                        <option>Rock Climbing</option>
+                        <option>Whitewater Rafting</option>
+                        <option>Paragliding</option>
+                        <option>Mountain Biking</option>
+                        <option>Scuba Diving</option>
+                        <option>Zip-lining</option>
+                    </select>
+
+                    <label for="message">Notes</label>
+                    <textarea id="message" rows="4" placeholder="Your experience level, preferred dates, questions..."></textarea>
+
+                    <div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+                        <div class="note">submit data...</div>
+                        <a class="btn" href="#gallery">Submit</a>
+                    </div>
+                </form>
+
+                <aside style="background:var(--card);padding:16px;border-radius:12px">
+                    <h3 style="margin-top:0">Quick Checklist</h3>
+                    <ul style="margin:8px 0 0 16px;color:var(--muted);line-height:1.6">
+                        <li>Training or guide booked</li>
+                        <li>Proper gear & spares</li>
+                        <li>Weather and permits checked</li>
+                        <li>Emergency contacts shared</li>
+                    </ul>
+
+                    <h4 style="margin-top:12px">Resources</h4>
+                    <p style="color:var(--muted);margin:6px 0 0 0">See certification bodies like PADI, UIAA, ACA for official courses and safety guidelines.</p>
+                </aside>
+            </div>
+        </section>
+
+        <footer>
+            <div>© Copyright 2025 Adventure Sports</div>
+            <div style="color:var(--muted)">Built by Abhay Kumar only</div>
+        </footer>
+    </div>
+    </form></div></video></div></article></div></article></div></article></div></article></div></article></aside>
+</body>
+</html>
